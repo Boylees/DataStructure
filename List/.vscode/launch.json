@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/boy/Desktop/workspace/DataStructure/List",
-      "program": "c:/Users/boy/Desktop/workspace/DataStructure/List/build/Debug/outDebug",
+      "cwd": "c:/Users/boy/Desktop/workspace/DataStructure/List/2.3",
+      "program": "c:/Users/boy/Desktop/workspace/DataStructure/List/2.3/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

@@ -58,7 +58,7 @@ void difference(SLinkList *space, int *S) {
             k = space[k]->cur;
         }
         if (k == space[r]->cur) {
-            i = Malloc_SL(space);
+            int i = Malloc_SL(space);
             space[i]->data = b;
             space[i]->cur = space[r]->cur;
             space[r]->cur = i;
