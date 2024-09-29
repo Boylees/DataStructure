@@ -5,6 +5,7 @@
 typedef int ElemType;
 typedef struct LNode {
     ElemType data;
+    int num;
     struct LNode *next;
 }*LinkList, LNode;
 
@@ -46,3 +47,4 @@ void Deletex(LinkList *L, ElemType x) {
 void releasex(LNode *p) {
     free(p);
 }
+
