@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MaxDegree 100
 
-typedef struct {
+typedef struct Node{
     int CoeffArray[MaxDegree + 1];
     int HighPower;
 } *Polynomial;
