@@ -11,11 +11,11 @@ typedef struct Node *PtrToNode;
 typedef PtrToNode Stack;
 
 int IsEmpty(Stack S) {
-    return S->next == NULL:
+    return S->next == NULL;
 }
 
 Stack CreateStack(void) {
-    Stack S = malloc(sizeof(Node));
+    Stack S = malloc(sizeof(struct Node));
     if (S == NULL) {
         printf("Out of space!");
         return NULL;
@@ -37,12 +37,12 @@ void MakeEmpty(Stack S) {
 
 void Push(ElemType X, Stack S) {
     PtrToNode TmpCell;
-    TmpCell = malloc(sizeof(Node));
-    if (TempCell = NULL) {
+    TmpCell = malloc(sizeof(struct Node));
+    if (TmpCell = NULL) {
         printf("Out of space");
         return; 
     }
-    TmpCell->ElemType = X;
+    TmpCell->data = X;
     TmpCell->next = S->next;
     S->next = TmpCell;
 }
@@ -55,7 +55,7 @@ ElemType Top(Stack S) {
     return 0;
 }
 
-void Pop(Stack) {
+void Pop(Stack S) {
     PtrToNode FirstCell;
     if (IsEmpty(S)) {
         printf("Empty Stack");
